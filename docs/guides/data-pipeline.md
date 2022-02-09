@@ -207,11 +207,10 @@ other services specific to your organisation.
 
 - [UK Parliament Members & Constituencies](../../api/groundwork.geo.territories.uk.parliament/)
 - [UK Postcode Geocoding](../../api/groundwork.geo.territories.uk.postcodes/)
-
+- [Airtable](../../api/groundwork.contrib.airtable.datasources/) 
 Forthcoming:
 
 - Action Network
-- Airtable
 - Google Sheets
 - Nationbuilder
 - Stripe
