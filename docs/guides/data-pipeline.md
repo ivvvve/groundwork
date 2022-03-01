@@ -197,7 +197,7 @@ class Party(SyncedModel):
 ```
 
 That's it! Generate and run migrations for the new models, run `python manage.py run_cron_tasks --once` again and you
-now have the UK's westminster representitives (and their thumbnails) stored in your database.
+now have the UK's Westminster representatives (and their thumbnails) stored in your database.
 
 We used this example not because it's especially interesting politically, but because it uses an open API that doesn't
 require configuration. However, the same principles here apply to anything – membership databases, event listings, or
@@ -207,11 +207,10 @@ other services specific to your organisation.
 
 - [UK Parliament Members & Constituencies](../../api/groundwork.geo.territories.uk.parliament/)
 - [UK Postcode Geocoding](../../api/groundwork.geo.territories.uk.postcodes/)
-
+- [Airtable](../../api/groundwork.contrib.airtable.datasources/) 
 Forthcoming:
 
 - Action Network
-- Airtable
 - Google Sheets
 - Nationbuilder
 - Stripe
@@ -226,7 +225,7 @@ simply adapt it in the Datasource interface than reinvent the wheel.
 To do this, extend [Datasource](../../api/groundwork.core.datasources/#externalresource). You need to implement `get()`
 which should get a resource by id and `list()`, which should list resources, optionally filtering them.
 
-Let's do that for a client library for an imaginary service classed _ZapMessage_.
+Let's do that for a client library for an imaginary service called _ZapMessage_.
 
 Here we're assuming that its client library has a class for each resource type and that these all have a `get()` and
 `filter()` class method to fetch from the API:
@@ -322,7 +321,7 @@ class MessageSender:
   name: str
 
 @dataclass
-class MessageSender:
+class MessageCategory:
   id: str
   name: str
 
